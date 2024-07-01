@@ -133,12 +133,10 @@
               <h5 class="product-name">Business Event</h5>
               <p>It is important for foreign citizens to check the visa regime applied in our country before traveling
                 to Türkiye for various purposes.</p>
-                <div class="price">
-                  <span>450 <span class="currency">EGP</span></span>
-                  <div>
-                    <i class="fas fa-heart"></i>
-                  </div>
-                </div>
+              <div class="price">
+                <span>450 <span class="currency">EGP</span></span>
+                <div><i class="fas fa-heart"></i></div>
+              </div>
             </div>
           </div>
           <div class="product card-event">
@@ -148,12 +146,10 @@
               <h5 class="product-name">Beauty Event</h5>
               <p>It is important for foreign citizens to check the visa regime applied in our country before traveling
                 to Türkiye for various purposes.</p>
-                <div class="price">
-                  <span>450 <span class="currency">EGP</span></span>
-                  <div>
-                    <i class="fas fa-heart"></i>
-                  </div>
-                </div>
+              <div class="price">
+                <span>450 <span class="currency">EGP</span></span>
+                <div><i class="fas fa-heart"></i></div>
+              </div>
             </div>
           </div>
           <div class="product card-event">
@@ -163,12 +159,10 @@
               <h5 class="product-name">Culture Event</h5>
               <p>It is important for foreign citizens to check the visa regime applied in our country before traveling
                 to Türkiye for various purposes.</p>
-                <div class="price">
-                  <span>450 <span class="currency">EGP</span></span>
-                  <div>
-                    <i class="fas fa-heart"></i>
-                  </div>
-                </div>
+              <div class="price">
+                <span>450 <span class="currency">EGP</span></span>
+                <div><i class="fas fa-heart"></i></div>
+              </div>
             </div>
           </div>
           <div class="product card-event">
@@ -178,12 +172,10 @@
               <h5 class="product-name">Sport Fest Event</h5>
               <p>It is important for foreign citizens to check the visa regime applied in our country before traveling
                 to Türkiye for various purposes.</p>
-                <div class="price">
-                  <span>450 <span class="currency">EGP</span></span>
-                  <div>
-                    <i class="fas fa-heart"></i>
-                  </div>
-                </div>
+              <div class="price">
+                <span>450 <span class="currency">EGP</span></span>
+                <div><i class="fas fa-heart"></i></div>
+              </div>
             </div>
           </div>
           <div class="product card-event">
@@ -195,20 +187,60 @@
                 to Türkiye for various purposes.</p>
               <div class="price">
                 <span>450 <span class="currency">EGP</span></span>
-                <div>
-                  <i class="fas fa-heart"></i>
-                </div>
+                <div><i class="fas fa-heart"></i></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="pagination" id="pagination"></div>
     </main>
     <!-- MAIN -->
   </section>
   <!-- CONTENT -->
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const itemsPerPage = 4;
+      const cards = document.querySelectorAll('.card-event');
+      const pagination = document.getElementById('pagination');
+      const totalPages = Math.ceil(cards.length / itemsPerPage);
 
+      function showPage(page) {
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+
+        cards.forEach((card, index) => {
+          if (index >= start && index < end) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        Array.from(pagination.children).forEach(button => {
+          button.classList.remove('active');
+        });
+        pagination.children[page - 1].classList.add('active');
+      }
+
+      function createPagination() {
+        for (let i = 1; i <= totalPages; i++) {
+          const button = document.createElement('button');
+          button.innerText = i;
+          button.addEventListener('click', () => showPage(i));
+          if (i === 1) {
+            button.classList.add('active');
+          }
+          pagination.appendChild(button);
+        }
+      }
+
+      createPagination();
+      showPage(1);
+    });
+  </script>
   <script src="js/script.js"></script>
 </body>
 

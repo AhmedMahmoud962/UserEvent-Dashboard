@@ -764,6 +764,39 @@ body {
   cursor: pointer;
 }
 
+
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 15px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
 @media (max-width: 768px) {
   .product.card-event {
     flex: 1 1 calc(50% - 20px);
