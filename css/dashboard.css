@@ -693,13 +693,15 @@ body {
   border: none;
 }
 
-100%;
-  margin: 0 auto;
-}
+
+
 
 .product.card-event {
   /* flex: 1 2 calc(30% - 20px); */
-  width: 30%;.container-events {
+  width: 30%;
+}
+
+.container-events {
   padding: 20px;
 }
 
@@ -707,18 +709,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 
+  width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
   border-radius: 5px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
-
-
-.product.card-event:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.product.card-event {
+  background: var(--light);
+  border-radius: 3px;
 }
 
 .product.card-event img {
@@ -826,13 +828,13 @@ body {
 }
 
 .pagination button {
-  padding: 15px 20px;
+  padding: 12px 20px;
   margin: 0 5px;
   border: none;
   background-color: #0056b3;
   color: white;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 .pagination button.active {
