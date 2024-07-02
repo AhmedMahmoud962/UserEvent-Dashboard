@@ -693,7 +693,13 @@ body {
   border: none;
 }
 
-.container-events {
+100%;
+  margin: 0 auto;
+}
+
+.product.card-event {
+  /* flex: 1 2 calc(30% - 20px); */
+  width: 30%;.container-events {
   padding: 20px;
 }
 
@@ -701,13 +707,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.product.card-event {
-  /* flex: 1 2 calc(30% - 20px); */
-  width: 30%;
+  width: 
   box-sizing: border-box;
   border-radius: 5px;
   overflow: hidden;
