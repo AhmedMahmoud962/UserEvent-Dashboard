@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   showPage(1);
 });
 
+// sideMenu
 const allSideMenu = document.querySelectorAll("#sidebar .side-menu.top li a");
 
 allSideMenu.forEach((item) => {
