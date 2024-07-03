@@ -338,10 +338,6 @@ body {
 
 /* NAVBAR */
 
-
-
-
-
 /* MAIN */
 #content main {
   width: 100%;
@@ -595,8 +591,6 @@ body {
 
 
 
-
-
 @media screen and (max-width: 768px) {
   #sidebar {
     width: 200px;
@@ -609,6 +603,14 @@ body {
 
   #content nav .nav-link {
     display: none;
+  }
+
+  #content main {
+    width: 100%;
+    padding: 25px 15px;
+    font-family: var(--poppins);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
   }
 }
 
