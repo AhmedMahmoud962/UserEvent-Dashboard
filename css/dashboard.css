@@ -449,10 +449,6 @@ body {
   color: var(--dark);
 }
 
-
-
-
-
 #content main .table-data {
   display: flex;
   flex-wrap: wrap;
@@ -584,13 +580,6 @@ body {
 
 /* MAIN */
 /* CONTENT */
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
   #sidebar {
     width: 200px;
@@ -607,17 +596,16 @@ body {
 
   #content main {
     width: 100%;
-    padding: 25px 15px;
+    padding: 25px 7px;
     font-family: var(--poppins);
     max-height: calc(100vh - 56px);
     overflow-y: auto;
   }
+
+  #content main .head-title .left h1 {
+    font-size: 28px;
+  }
 }
-
-
-
-
-
 
 @media screen and (max-width: 576px) {
   #content nav form .form-input input {
@@ -664,6 +652,10 @@ body {
 
   #content main .table-data .todo .todo-list {
     min-width: 420px;
+  }
+
+  #content main .head-title .left h1 {
+    font-size: 24px;
   }
 }
 
