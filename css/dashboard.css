@@ -100,6 +100,11 @@ body {
   margin-top: 48px;
 }
 
+#sidebar .logout {
+  position: absolute;
+  bottom: 10px;
+}
+
 #sidebar .side-menu li {
   height: 48px;
   background: transparent;
