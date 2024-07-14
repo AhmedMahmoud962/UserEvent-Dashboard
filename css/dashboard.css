@@ -867,7 +867,7 @@ body {
   }
 
   .wishlist-filter select {
-    width: auto;
+    /* width: auto; */
     padding: 15px 10px;
     border-radius: 5px;
     outline: none;
