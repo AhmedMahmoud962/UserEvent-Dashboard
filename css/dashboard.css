@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;520;600;700&display=swap');
 
 * {
   margin: 0;
@@ -84,7 +84,7 @@ body {
   top: 0;
   left: 0;
   background: var(--light);
-  z-index: 500;
+  z-index: 520;
   padding-bottom: 20px;
   box-sizing: content-box;
 }
@@ -397,7 +397,7 @@ body {
   justify-content: center;
   align-items: center;
   grid-gap: 10px;
-  font-weight: 500;
+  font-weight: 520;
 }
 
 
@@ -489,7 +489,7 @@ body {
 
 #content main .table-data .order {
   flex-grow: 1;
-  flex-basis: 500px;
+  flex-basis: 520px;
 }
 
 #content main .table-data .order table {
@@ -610,6 +610,11 @@ body {
   #content main .head-title .left h1 {
     font-size: 28px;
   }
+
+  #content main .table-data>div {
+    overflow-x: auto;
+    padding: 24px 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -648,15 +653,15 @@ body {
   }
 
   #content main .table-data .head {
-    min-width: 420px;
+    min-width: 520px;
   }
 
   #content main .table-data .order table {
-    min-width: 420px;
+    min-width: 520px;
   }
 
   #content main .table-data .todo .todo-list {
-    min-width: 420px;
+    min-width: 520px;
   }
 
   #content main .head-title .left h1 {
