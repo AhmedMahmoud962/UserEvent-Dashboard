@@ -596,7 +596,7 @@ body {
 
   #content main {
     width: 100%;
-    padding: 25px 7px;
+    padding: 25px 8px;
     font-family: var(--poppins);
     max-height: calc(100vh - 56px);
     overflow-y: auto;
